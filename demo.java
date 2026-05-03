@@ -1,12 +1,14 @@
-class Demo
-private int x;
-static void f1()
-{
-    x=10;
+class Demo {
+    private static int x;
 
+    static void f1() {
+        x = 10;
+        System.out.println(x);
+    }
 }
-class program 
-public static void main(String[] args) {
-    demo d=new demo();
-    d.f1();
+
+class Program {
+    public static void main(String[] args) {
+        Demo.f1();   // no object needed
+    }
 }
